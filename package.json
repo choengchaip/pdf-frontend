@@ -1,0 +1,37 @@
+{
+  "name": "pdf-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.20.2",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@nuxtjs/toast": "^3.3.1",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9",
+    "axios": "^0.21.0",
+    "cookie-universal-nuxt": "^2.1.4",
+    "js-cookie": "^2.2.1",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.15.2",
+    "postcss": "^7",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "url-join": "^4.0.1",
+    "uuid": "^8.3.2",
+    "vue-class-component": "^7.2.6",
+    "vue-click-outside": "^1.1.0",
+    "vue-ctk-date-time-picker": "^2.5.0",
+    "vue-fragment": "^1.5.2",
+    "vue-property-decorator": "^9.0.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@types/node": "^14.14.9"
+  }
+}
