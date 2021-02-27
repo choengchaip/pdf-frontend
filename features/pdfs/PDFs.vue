@@ -1,26 +1,34 @@
 <template>
   <div>
     <h1 class="text-4xl mb-10 font-bold">My PDFs</h1>
-    <div class="w-full flex justify-start">
-      <InputText
-          width="w-64"
-          class="mr-3"
-          placeholder="Search"
-          v-model="search"/>
-      <VueCtkDateTimePicker
-          range
-          label="Upload date"
-          title="Upload date"
-          locale="en"
-          format="YYYY-MM-DDThh:mm:ss+07:00"
-          v-model="uploadRange"/>
-      <VueCtkDateTimePicker
-          range
-          label="Search"
-          title="Expire date"
-          locale="en"
-          format="YYYY-MM-DDThh:mm:ss+07:00"
-          v-model="expireRange"/>
+    <div class="w-full flex flex-wrap justify-start">
+      <div class="md:flex-25-p flex-100-p mr-3">
+        <InputText
+            width="w-full"
+            class="mr-3"
+            placeholder="Search"
+            v-model="search"/>
+      </div>
+      <div class="md:flex-25-p flex-100-p mr-3">
+        <VueCtkDateTimePicker
+            range
+            class="w-full"
+            label="Upload date"
+            title="Upload date"
+            locale="en"
+            format="YYYY-MM-DDThh:mm:ss+07:00"
+            v-model="uploadRange"/>
+      </div>
+      <div class="md:flex-25-p flex-100-p mr-3">
+        <VueCtkDateTimePicker
+            range
+            class="w-full"
+            label="Search"
+            title="Expire date"
+            locale="en"
+            format="YYYY-MM-DDThh:mm:ss+07:00"
+            v-model="expireRange"/>
+      </div>
     </div>
     <Table :options="tableOptions"/>
   </div>
@@ -134,9 +142,7 @@ export default class PDFs extends Base {
 <style lang="scss" scoped>
 .date-time-picker {
   height: fit-content !important;
-  margin-top: 5px;
-  width: 256px;
-  margin-left: 0;
-  margin-right: 0.75rem;
+  width: 100%;
+  margin: 5px 0 0.75rem 0;
 }
 </style>

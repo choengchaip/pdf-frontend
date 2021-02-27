@@ -1,9 +1,10 @@
 <template>
     <div class="flex w-screen h-screen">
-        <div class="flex-50-p h-full bg-blue-900 px-32 pb-6 flex items-center">
+        <div class="hidden md:flex flex-50-p h-full bg-blue-900 px-32 pb-6 items-center">
             <img class="w-full" src="/finema.svg" alt="Finema">
         </div>
-        <div class="flex-50-p h-full flex flex-col justify-center justify-center px-20">
+        <div class="flex-grow md:flex-50-p h-full flex flex-col justify-center justify-center px-20">
+            <img class="block md:hidden w-64 mx-auto mb-8" src="/finema.svg" alt="Finema">
             <InputText
                 :isRequired="true"
                 label="Email"

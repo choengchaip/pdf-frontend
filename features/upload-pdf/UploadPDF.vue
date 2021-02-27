@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col h-full">
-    <div class="w-2/6 mx-auto flex-grow flex flex-col justify-center">
+    <div class="w-5/6 md:w-4/6 xl:w-2/6 mx-auto flex-grow flex flex-col justify-center">
       <h1 class="text-4xl mb-16 font-bold text-center">Upload PDF File</h1>
       <InputText
           :isRequired="true"
